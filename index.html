@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Seblak Manan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Warung Seblak <span class="highlight">Mantul</span></h1>
+
+            <ul>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+        </header>
+        
+        <div class="banner"></div> <!-- Banner section -->
+        <p class="deskripsi">Nikmat seblak dengan berbagai level pedas yang menggoyang lidah</p>
+
+
+        <section id="promo">
+            <h2>Promo Hari Ini</h2>
+            <p id="promoMessage">Klik Tombol di bawah Untuk melihat Promo Spesial Hari ini!!</p>
+            <button onclick="tampilkanPromo()">Lihat Promo</button>
+        </section>
+
+        <section id="Menu">
+            <h2>Menu Seblak Favorit</h2>
+            <ul id="listMenu">
+                <!-- daftar menu ini akan ditampilkan di javascript -->
+            </ul>
+            <button onclick="tampilkanMenu()">Lihat Menu</button>
+        </section>
+
+        <section id="Order">
+            <h2>Pesan Seblak</h2>
+            <p>Pilih menu dan masukkan jumlah pesanan</p>
+            <label for="pilihMenu">Menu Seblak</label>
+            <select id="pilihMenu">
+                <!-- Pilihan menu ini akan ditampilkan di javascript -->
+            </select> <br><br>
+            <label for="inputJumlah">Jumlah:</label>
+            <input type="number" id="inputJumlah" placeholder="Jumlah Pesanan" min="1" max="20"><br><br>
+            <button onclick="cekPesanan()">Pesan Sekarang</button>
+            <p id="hasilPesanan"></p>
+            <p id="totalBayar"></p>
+
+            <h3>Pembayaran</h3>
+            <label for="uangBayar">Jumlah Uang Yang harus dibayar: </label>
+            <input type="number" id="uangBayar" placeholder="Masukkan Jumlah Uang">
+            <button onclick="hitungKembalian()">Hitung Kembalian</button>
+            <p id="hasilKembalian"></p>
+        </section>
+
+        <section id="testimonial">
+            <h2>Apa Kata Mereka?</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p>"Seblak terbaik yang pernah saya coba! Pedasnya Woww dan porsinya mantap!"</p>
+                    <h4>- Chef Renatta, Bandung</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Harganya terjangkau dan rasanya sangat otentik. Saya pasti akan pesan lagi!"</p>
+                    <h4>- Chef Arnold, Jakarta</h4>
+                </div>
+            </div>
+        </section>
+     
+        <footer class="footer">
+            <div class="footer-info"
+                <p>Alamat: Jl. Tengah Gg.Mushola Annida No.87, Kota Bandung</p>
+                <p>Jam Buka: 10:00 - 22:00</p>
+            </div>
+        
+            <div class="footer-icons">
+                <p class="copy">&copy; Warung Seblak Joss. Semua hak dilindungi</p>
+                <!-- Icon Facebook -->
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Ikon Facebook" width="30">
+                </a>
+        
+                <!-- Icon WhatsApp -->
+                <a href="https://wa.me/yourwhatsapplink" target="_blank" aria-label="WhatsApp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Ikon WhatsApp" width="30">
+                </a>
+        
+                <!-- Icon Instagram -->
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Ikon Instagram" width="30">
+                </a>
+            </div>
+        </footer>
+        
+        
+
+        
+    </div>
+</body>
+</html>
+
